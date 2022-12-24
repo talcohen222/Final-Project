@@ -1,4 +1,5 @@
 const app = require("express")();
+//process = require('process')
 
 //const PORT = process.env.PORT || 3000;
 
@@ -6,4 +7,4 @@ app.get("/", (req, res) => {
   res.send("Hello world");
 });
 
-app.listen(proces.env.PORT || 3000);
+app.listen(process.env.PORT || 3000);
