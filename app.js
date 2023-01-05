@@ -9,5 +9,10 @@ app.get("/", (req, res) => {
 
 app.listen(process.env.PORT || 3000);
 
-
-const uri = process.env.MONGODB_URI;
+mongoose.connect(
+  process.env.FinalPrijectDB || 'mongodb://localhost:27017/FinalPrijectDB',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+);
