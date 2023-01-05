@@ -18,12 +18,24 @@ mongoose.connect(
   },
 );*/
 
+/*
 const MongoClient = require('mongodb').MongoClient;
 
-MongoClient.connect(process.env.MONGODB_URI, function(err, db) {
+MongoClient.connect(process.env.FinalProjectDB, function(err, db) {
   if (err) throw err;
   console.log("Connected to the database!");
   // do something with the database here
 });
+*/
 
+const MongoClient = require('mongodb').MongoClient;
+
+const uri = "mongodb+srv://talco4088:talco4088@finalprojectdb.sdvuqqp.mongodb.net/?retryWrites=true&w=majority";
+
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
 
