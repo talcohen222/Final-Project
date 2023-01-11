@@ -10,8 +10,5 @@ const user = new mongoose.Schema({
         type: String,
         required: true
     }, 
-    uploadedOn: {
-        type: Date,
-    }
-}, {autoIndex: true});
+}, {autoIndex: true}, {timestamps: true});
 const User = mongoose.model('User', userSchema);
