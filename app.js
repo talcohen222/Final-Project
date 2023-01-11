@@ -2,8 +2,15 @@ const app = require("express")();
 const createDB = require('./createBD');
 const mongoose = require('mongoose');
 //process = require('process')
+const BodyParser = require('body-parser');
+const path = require('path');
 
+app.use(BodyParser.json());
+app.use(BodyParser.urlencoded({extended: true}));
+app.set('views', path.join(__dirname, 'public/views'));
 app.set('view engine', 'pug');
+app.use(express.static(path.join(__dirname, "public")));
+
 
 app.get("/", (req, res) => {
   res.redirect('HomePage');
