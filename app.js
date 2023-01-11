@@ -14,8 +14,7 @@ app.listen(process.env.PORT || 3000);
 
 const URI = process.env.MONGODB_URI;
 
-var Schema = mongoose.Schema;
-const user = new Schema({
+const user = new mongoose.Schema({
   email: {
       type: String,
       required: true,
