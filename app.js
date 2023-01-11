@@ -13,6 +13,8 @@ app.listen(process.env.PORT || 3000);
 
 const URI = process.env.MONGODB_URI;
 
+app.get('/createUsersTable', CreateDB.User);
+
 /*
 mongoose.connect(
   process.env.FinalPrijectDB || 'mongodb://localhost:27017/FinalPrijectDB',

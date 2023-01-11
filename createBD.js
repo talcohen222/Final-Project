@@ -13,3 +13,5 @@ const user = new mongoose.Schema({
 }, {autoIndex: true}, {timestamps: true});
 
 const User = mongoose.model('User', user);
+
+module.exports = {User}
