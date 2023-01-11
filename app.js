@@ -9,6 +9,9 @@ app.get("/", (req, res) => {
 
 
 app.listen(process.env.PORT || 3000);
+
+const URI = process.env.MONGODB_URI;
+
 /*
 mongoose.connect(
   process.env.FinalPrijectDB || 'mongodb://localhost:27017/FinalPrijectDB',
@@ -28,6 +31,7 @@ MongoClient.connect(process.env.FinalProjectDB, function(err, db) {
 });
 */
 
+/*
 const MongoClient = require('mongodb').MongoClient;
 
 const uri = "mongodb+srv://talco4088:talco4088@finalprojectdb.sdvuqqp.mongodb.net/?retryWrites=true&w=majority";
@@ -39,3 +43,4 @@ client.connect(err => {
   client.close();
 });
 
+*/
