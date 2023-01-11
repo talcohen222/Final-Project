@@ -11,7 +11,7 @@ const user = new mongoose.Schema({
         required: true
     }, 
     uploadedOn: {
-        type: ISODate,
+        type: Date,
     }
 }, {autoIndex: true});
 const User = mongoose.model('User', userSchema);
