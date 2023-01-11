@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const user = new mongoose.Schema({
+var user = new mongoose.Schema({
     email: {
         type: String,
         required: true,
@@ -12,6 +12,6 @@ const user = new mongoose.Schema({
     }, 
 }, {autoIndex: true}, {timestamps: true});
 
-const User = mongoose.model('User', user);
+var User = mongoose.model('User', user);
 
 module.exports = {User}
