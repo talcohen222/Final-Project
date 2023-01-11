@@ -14,7 +14,7 @@ app.listen(process.env.PORT || 3000);
 const URI = process.env.MONGODB_URI;
 
 var Schema = mongoose.Schema;
-var user = new Schema({
+const user = new Schema({
   email: {
       type: String,
       required: true,
@@ -26,7 +26,7 @@ var user = new Schema({
   }, 
 }, {autoIndex: true}, {timestamps: true});
 
-var User = mongoose.model('User', user);
+const User = mongoose.model('User', user);
 
 
 //app.get('/createUsersTable', mongoose.User);
