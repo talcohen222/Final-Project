@@ -12,9 +12,8 @@ app.set('views', path.join(__dirname, 'public/views'));
 app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, "public")));
 
-
 app.get("/", (req, res) => {
-  res.render('HomePage');
+  res.redirect('HomePage');
 });
 
 
