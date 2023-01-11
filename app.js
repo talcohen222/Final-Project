@@ -13,7 +13,7 @@ app.listen(process.env.PORT || 3000);
 
 const URI = process.env.MONGODB_URI;
 
-app.get('/createUsersTable', CreateDB.User);
+app.get('/createUsersTable', mongoose.User);
 
 /*
 mongoose.connect(
