@@ -11,4 +11,5 @@ const user = new mongoose.Schema({
         required: true
     }, 
 }, {autoIndex: true}, {timestamps: true});
-const User = mongoose.model('User', userSchema);
+
+const User = mongoose.model('User', user);
