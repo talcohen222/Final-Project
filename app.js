@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const BodyParser = require('body-parser');
 const path = require('path');
 
+const app = express();
 app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({extended: true}));
 app.set('views', path.join(__dirname, 'public/views'));
