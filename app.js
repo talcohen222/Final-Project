@@ -3,10 +3,10 @@ const createDB = require('./createBD');
 const mongoose = require('mongoose');
 //process = require('process')
 
-//const PORT = process.env.PORT || 3000;
+app.set('view engine', 'pug');
 
 app.get("/", (req, res) => {
-  res.send("Hello Naama and Lior !!! :)");
+  res.redirect('HomePage');
 });
 
 
@@ -33,3 +33,5 @@ U.save(function (err) {
   if (err) return handleError(err);
   // saved!
 });
+
+
