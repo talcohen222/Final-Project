@@ -1,5 +1,5 @@
 const app = require("express")();
-const mongoose = require('./createBD');
+const createDB = require('./createBD');
 const mongoose = require('mongoose');
 //process = require('process')
 
