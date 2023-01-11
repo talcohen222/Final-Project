@@ -27,39 +27,3 @@ const user = new Schema({
 }, {autoIndex: true}, {timestamps: true});
 
 const User = mongoose.model('User', user);
-
-
-//app.get('/createUsersTable', mongoose.User);
-
-/*
-mongoose.connect(
-  process.env.FinalPrijectDB || 'mongodb://localhost:27017/FinalPrijectDB',
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  },
-);*/
-
-/*
-const MongoClient = require('mongodb').MongoClient;
-
-MongoClient.connect(process.env.FinalProjectDB, function(err, db) {
-  if (err) throw err;
-  console.log("Connected to the database!");
-  // do something with the database here
-});
-*/
-
-/*
-const MongoClient = require('mongodb').MongoClient;
-
-const uri = "mongodb+srv://talco4088:talco4088@finalprojectdb.sdvuqqp.mongodb.net/?retryWrites=true&w=majority";
-
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
-
-*/
