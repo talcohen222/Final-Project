@@ -27,3 +27,5 @@ const user = new mongoose.Schema({
 }, {autoIndex: true}, {timestamps: true});
 
 const User = mongoose.model('User', user);
+
+const U = new User({ email: 'tal@gmail.com', password: '123456'});
