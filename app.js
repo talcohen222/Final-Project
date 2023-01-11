@@ -1,4 +1,4 @@
-const app = require("express")();
+const app = require("express");
 const createDB = require('./createBD');
 const mongoose = require('mongoose');
 //process = require('process')
