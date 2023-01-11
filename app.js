@@ -29,3 +29,7 @@ const user = new mongoose.Schema({
 const User = mongoose.model('User', user);
 
 const U = new User({ email: 'tal@gmail.com', password: '123456'});
+U.save(function (err) {
+  if (err) return handleError(err);
+  // saved!
+});
