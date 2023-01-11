@@ -1,5 +1,6 @@
 const app = require("express")();
 const mongoose = require('./createBD');
+const mongoose = require('mongoose');
 //process = require('process')
 
 //const PORT = process.env.PORT || 3000;
